@@ -1,0 +1,15 @@
+{
+    "name":"your.note.tool",
+    "title":"your.note.tool",
+    "description":"note the code which always",
+    "keywords":[
+        "note",
+        "code"
+    ],
+    "author":"na<umbrella@errorot.com>",
+    "engines":{
+        "brackets": ">=0.40.0"
+    }
+    "version":"0.1.1-0812-release"
+    
+}
