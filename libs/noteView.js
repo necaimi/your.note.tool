@@ -8,8 +8,6 @@ define(function(require, exports, module){
         InlineWidget   = brackets.getModule("edit/InlineWidget").InlineWidget,
         ExtensionUtils = brackets.getModule("utils/ExtensionUtils");
     
-    var noteItem = require("noteItem").noteItem;
-    
     var items = {};
     
     function noteView(){
@@ -24,11 +22,16 @@ define(function(require, exports, module){
         if(items[_id])
             return;
         
-        var _item = new noteItem();
-        _item.getDom().bind("click", function(e){
+        var _item = $("<li/>");
+        _item.bind("click", function(e){
             CommandManager.execute(_id);
         });
      
         items[_id] = _item;
+        
     }
+    
+    
+    
+    
 });
