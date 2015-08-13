@@ -20,7 +20,7 @@ define(function(require, exports, module){
     }
     
     
-    CommandManger.register(MENU_Name, COMMAND_ID, OnMenuClickHandler);
+    CommandManager.register(MENU_Name, COMMAND_ID, OnMenuClickHandler);
     var menu = Menus.getMenu(Menus.AppMenuBar.NAVIGATE_MENU);
         menu.addMenuDivider();
         menu.addMenuItem(_ID, keys.shortcut);
