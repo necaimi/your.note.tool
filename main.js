@@ -4,9 +4,9 @@ define(function(require, exports, module){
         
     /*   modules from brakcets */
     
-    var CommandManager  = brackets.getModule("CommandManager"),
+    var CommandManager  = brackets.getModule("command/CommandManager"),
         DocumentManager = brackets.getModule("document/DocumentManager"),
-        Menus           = brackets.getModule("Menus");
+        Menus           = brackets.getModule("command/Menus");
         
     
     var MENU_Name = "YourNoteTool",
