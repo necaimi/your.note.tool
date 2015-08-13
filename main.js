@@ -12,6 +12,7 @@ define(function(require, exports, module){
     var MENU_Name = "YourNoteTool",
         COMMAND_ID   = "note.tool";
     
+    var keys = JSON.parse(require("text!shortcut.json"));
     
     function OnMenuClickHandler(){
         //insert 
@@ -22,7 +23,6 @@ define(function(require, exports, module){
     CommandManger.register(MENU_Name, COMMAND_ID, OnMenuClickHandler);
     var menu = Menus.getMenu(Menus.AppMenuBar.NAVIGATE_MENU);
         menu.addMenuDivider();
-        menu.addMenuItem(_ID, "ctrl-alt-i");
-        
+        menu.addMenuItem(_ID, keys.shortcut);
         
 });
