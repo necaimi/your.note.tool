@@ -23,6 +23,6 @@ define(function(require, exports, module){
     CommandManager.register(MENU_Name, COMMAND_ID, OnMenuClickHandler);
     var menu = Menus.getMenu(Menus.AppMenuBar.NAVIGATE_MENU);
         menu.addMenuDivider();
-        menu.addMenuItem(_ID, keys.shortcut);
+        menu.addMenuItem(COMMAND_ID, keys.shortcut);
         
 });
