@@ -9,7 +9,7 @@
     "author":"na<umbrella@errorot.com>",
     "engines":{
         "brackets": ">=0.40.0"
-    }
+    },
     "version":"0.1.1-0812-release"
     
 }

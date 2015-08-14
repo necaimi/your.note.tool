@@ -1,0 +1,16 @@
+{
+   "plugins":[
+       {
+           "html":"html",
+           "label":"col5",
+           "description":"insert col5 html string",
+           "path":"./plugins/col5"
+       },
+       {
+           "stylesheet":"stylesheet",
+           "label":"col5",
+           "description":"insert col5's stylesheet content",
+           "path":"./plugins/col5style"
+       }
+   ]
+}
