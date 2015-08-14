@@ -13,12 +13,12 @@ define(function(require, exports, module){
     
     function noteView(pros){
         InlineWidget.call(this);
+        
         this.$wrapperDiv = Mustache.render(_html, pros);
         
         this.$htmlContent.append(this.$wrapperDiv);
      
     }
-    
     
     noteView.prototype = Object.create(InlineWidget.prototype);
     noteView.prototype.constructor = InlineWidget;
